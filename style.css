@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Remove overflow and improve responsiveness */
+.bg
+{
+    height: 100vh;
+    background-image: url(pic/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+/* Navbar */
+.nav-link {
+  color: white;
+}
+
+/* Heading */
+.heading {
+  z-index: 9999;
+}
+
+/* Service */
+.lined {
+  height: 5px;
+  background-color: #0078ff;
+  width: 50px;
+  margin: 0 auto; /* Center the line */
+}
+
+.circled {
+  height: 120px;
+  width: 120px;
+  font-size: 2rem;
+  border-style: solid;
+  border-width: 7px;
+  border-radius: 50%;
+  text-align: center;
+  border-color: #0078ff;
+  background-color: #fff;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circled:hover {
+  background-color: #0078ff;
+  border-color: #CDE1F8;
+  color: #fff;
+}
+
+.iconed {
+  font-size: 50px;
+}
+
+/* Service Data */
+.bgimage {
+  position: relative;
+  width: 100%; /* Adjusted width */
+  background-image: url(pic/counters-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+@media screen and (max-width: 1000px)
+{
+  .bgimage 
+  {
+  height: 100vh;
+  }
+  .context
+  {
+    margin-bottom: 50px;
+  }
+  
+}
+@media screen and (max-width: 800px)
+{
+  .bgimage 
+  {
+  height: 140vh;
+  }
+  .semicircle
+  {
+    margin-left: 100px;
+  }
+  
+}
+
+.semicircle {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  font-size: 2rem;
+  border-style: solid;
+  border-width: 7px;
+  border-radius: 50%;
+  text-align: center;
+  border-color: #ffffff80;
+  z-index: 999999;
+}
+
+.overlayblue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: #0078ff;
+}
+
+.fs {
+  font-size: 18px;
+}
+
+.iconn {
+  width: 290px;
+  transform: translate(10px, 120px);
+  margin-bottom: 10px; /* Adjust spacing between icon and text */
+}
+
+.context {
+  transform: translate(50px, 200px);
+  display: block;
+}
+
+.fss {
+  font-size: 35px;
+}
+
+/* Slider */
+
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.carousel-indicators {
+  transform: translateY(50px);
+}
+
+/* Portfolio */
+.imgprot {
+  position: relative;
+  overflow: hidden;
+}
+
+.imgprot img {
+  transition: transform 1s;
+}
+
+.imgprot:hover img {
+  transform: scale(1.2);
+}
+
+/* Blog */
+/* No specific adjustments made */
+.bgimg2 {
+  position: relative;
+  overflow: hidden;
+  margin-left: 0; /* Adjusted margin-left to remove space */
+  width: 100%;
+  background-image: url(pic/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position:center;
+  height: 75vh;
+}
+.buttoned
+{
+  bottom: 17px;
+}
+.buttoned button
+{
+  font-size: 15px;
+}
+.imgblogg
+{
+  width: 7%;
+}
+.ico
+{
+  list-style: none;
+}
+.icoo
+{
+  line-height: 2;
+}
+.smalled
+{
+  width: 50px;
+  height: 50px;;
+}
+.icosmall
+{
+  font-size: 20px;
+}
+.rline
+{
+  width:25%;
+  position: relative;
+  right:38%;
+  margin-top: 20px;
+}
+
+.lline
+{
+  width:30%;
+  position: relative;
+  right:35%;
+  margin-top: 20px;
+}
+.bgimg3
+{
+  height: 100vh;
+}
+.listedd
+{
+  list-style: none;
+}
+.blogdescrp h4
+{
+  color: black;
+  transition: all 1s ease-in-out;
+}
+.blogdescrp h4:hover
+{
+  color: #0078ff;
+}
+.changee
+{
+  color: black;
+  transition: all 1s ease-in-out;
+}
+.changee:hover
+{
+  color: #0078ff;
+}
+@keyframes write 
+{
+  0% { width: 0; 
+  opacity: 0.9;
+}
+  100% { width: 100%; 
+  opacity: 1;}
+}
+
+.developer-animation {
+  font-size: 36px;
+  overflow: hidden;
+  text-align: center;
+  animation: write 6s infinite;
+}
